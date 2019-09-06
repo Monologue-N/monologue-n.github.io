@@ -21,7 +21,21 @@
   
 <body>
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-  <style>   
+  <style>  
+   .back {
+     position: fixed;
+     padding: 0;
+     margin: 0;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: white;
+     animation-name: backdiv;
+     animation-duration: 6s; 
+     animation-iteration-count: infinite;
+    }    
+        
     .head-padding1 {
       height: 95px;
       margin: auto;
@@ -127,6 +141,11 @@
       }    
     }
     
+    @keyframes backdiv {
+      50% {
+        background-color: #d1eeee;
+      }
+    }
   </style>
   
 
