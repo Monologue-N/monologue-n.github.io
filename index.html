@@ -89,18 +89,24 @@
       margin: 10px auto;
       position: relative;
       left: 20%;
-      border-radius: 50%
-      background: linear-gradient( 35deg, #ccffff, #ffcccc);
+      border-radius: 50%;
+      background: linear-gradient(35deg, #ccffff, #ffcccc);
       animation-name: fade;
-      animation-duration: 3s;
+      animation-duration: 5s;
       animation-iteration-count: infinite;
     }
     
     @keyframes fade{
-      50% {
-         left: 60%;
-         opacity: 0.1;
+      0% {
+        left: 0px;
       }
+      50% {
+        left: 60%;
+        opacity: 0.1;
+      }
+      100%{
+         left: 0px;
+      }     
     }
     
   </style>
