@@ -40,6 +40,12 @@
       height: 95px;
       margin: auto;
       background-color: #e0eee8;
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas:
+        "header profile"
+        "moto moto"     
     }
     /*
     .head-padding2 {
@@ -54,6 +60,8 @@
       font-size: 32px;
       margin-bottom: -10px;
       text-align: center;
+      display: grid;
+      grid-area: header;
     }
     
     .moto-style {
@@ -62,6 +70,8 @@
       text-align: center;
       margin-bottom: -50px;
       letter-spacing: 1px;
+      display: grid;
+      grid-area: moto;
     }
     
     .text-out {
@@ -165,10 +175,11 @@
       border-radius: 15px;
     }
     .profile {
-      height: 30px;
-      width: 30px;
+      height: 60px;
+      width: 60px;
       border-radius: 10px;
-      display: flex;
+      display: grid;
+      grid-area: profile;
     }
     
   </style>
@@ -178,16 +189,13 @@
   <main>
    <div class="back"> 
    <div class="head-padding1"> 
-    <h2 class="head-style">
-     Monologue.№
+    <h2 class="head-style"> Monologue.№ </h2>
       <img src="image/profile.jpg" alt="profile" class="profile"></img>
       <h5 class="moto-style">
      "It was but yesterday I thought myself a fragment quivering without rhythm in the sphere of life."
      </h5>
-    </h2>
-     
-
     </div>
+    
     <div id="ball1"></div>
     <div id="ball2"></div>
   <!--
